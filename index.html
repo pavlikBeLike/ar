@@ -4,17 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ANTOH1 AR Model</title>
-  <!-- Мета-теги для AR Quick Look -->
+  <!-- Мета-тег для AR Quick Look -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <link rel="apple-touch-icon" href="https://pavlikbelike.github.io/ar/ANTOHA1.usdz">
+  <!-- Это ключевая строка для ARKit и AR Quick Look -->
+  <link rel="ar" href="https://pavlikbelike.github.io/ar/ANTOHA1.usdz">
 </head>
 <body>
-  <!-- Ссылка для AR Quick Look -->
-  <a href="https://pavlikbelike.github.io/ar/ANTOHA1.usdz" rel="ar" target="_blank">
-    Открыть в AR
-  </a>
   <script>
+    // Если это iOS устройство, автоматически откроем AR
     if (navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) {
       window.location.href = "https://pavlikbelike.github.io/ar/ANTOHA1.usdz";
     }
