@@ -4,12 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ANTOH1 AR Model</title>
+  <!-- Мета-тег для AR Quick Look -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <!-- Мета-тег для AR Quick Look -->
-  <link rel="ar" href="https://pavlikbelike.github.io/ar/ANTOHA1.usdz">
+  <!-- Мета-тег для ARKit -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <!-- Это указывает iOS, что это файл для AR Quick Look -->
+  <link rel="apple-touch-icon" href="https://pavlikbelike.github.io/ar/ANTOHA1.usdz">
 </head>
 <body>
-  <!-- Это не нужно будет нажимать. Страница сразу будет запускать AR на iPhone -->
+  <script>
+    if (window.matchMedia('(pointer: coarse)').matches) {
+      window.location.href = "https://pavlikbelike.github.io/ar/ANTOHA1.usdz";
+    } else {
+      window.location.href = "https://pavlikbelike.github.io/ar/ANTOHA1.usdz";
+    }
+  </script>
 </body>
 </html>
