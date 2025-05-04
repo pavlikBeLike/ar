@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>AR Redirect</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ANTOH1 AR Model</title>
 </head>
 <body>
   <script>
-    // Проверяем, если это устройство iOS
-    if (navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) {
-      // Автоматически направляем на файл .usdz
+    if (navigator.userAgent.match(/(iPhone|iPad|iPod)/i)) {
+      // моментальный редирект на .usdz — ARKit сразу откроет камеру
       window.location.href = "https://pavlikbelike.github.io/ar/ANTOHA1.usdz";
+    } else {
+      document.body.innerHTML = "<p>This experience is only available on iOS with Safari.</p>";
     }
   </script>
 </body>
